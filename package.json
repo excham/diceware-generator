@@ -1,0 +1,15 @@
+{
+  "name": "diceware-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "webpack": "^3.5.5"
+  }
+}

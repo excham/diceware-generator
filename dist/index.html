@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Diceware</title>
+
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  </head>
+  <body>
+    <section class="hero is-primary is-fullheight id-bold">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">
+            <span class="word" data-word="1"></span><span class="word" data-word="2"></span><span class="word" data-word="3"></span><span class="word" data-word="4"></span><span class="word" data-word="5"></span><span class="word" data-word="6"></span>
+          </h1>
+          <h2 class="subtitle">
+            <a href="#" data-action="generate">generate new</a>
+            <span>|</span>
+            <a href="#" data-action="copy-modal-open">copy current</a>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <div class="modal copy-modal">
+      <div class="modal-background" data-action="copy-modal-close"></div>
+      <div class="modal-content">
+        <div class="card">
+          <div class="card-content">
+            <input type="text" class="input" data-value="word-string">
+          </div>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close" data-action="copy-modal-close"></button>
+    </div>
+  </body>
+
+  <script src="app.js" charset="utf-8"></script>
+</html>
